@@ -1,6 +1,12 @@
-#nadpis{
-    color: #5E5694;
-}
 #logo{
-    width: 100px;!important;
+    width: 1000px;!important;
+}
+.navbar-nav li a{
+    position: relative;
+    display: block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f80b0b; !important;
+    bottom: 5px;
+    letter-spacing: 4px;
 }
