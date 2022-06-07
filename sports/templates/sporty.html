@@ -1,10 +1,12 @@
 {%extends 'base.html'%}
+
 {%block content%}
-    <div class="container-fluid">
+     <div class="container-fluid">
     <div class="row">
-    <h1 class="text-center py-3">Databáze sportů</h1>
-{%for sport in sports%}
- <div class="col-lg-4 mb-5">
+    <h1 class="text-center py-3">List Sportů</h1>
+      <div class="col-xl-1"></div>
+ {%for sport in sporty%}
+     <div class="col-xl-2 mb-5">
       <div class="card">
         <img src="{{ sport.obrazek.url }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
         <div class="card-body">
@@ -18,6 +20,7 @@
       </div>
     </div>
     {% endfor %}
+     <div class="col-xl-1"></div>
+       </div>
+     </div>
 {%endblock%}
-</div>
-</div>

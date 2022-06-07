@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<h1 class="text-center py-3">Databáze sportu</h1>
+
+<h1 class="p-3 py-1">{{ sporty_detail.nazev_sportu }}</h1>
+    <div class="p-3"> {{ sporty_detail.historie }}</div>
+    <div class="p-3"><b>Roční období:</b> {{ sporty_detail.obdobi }}</div>
+
+{%endblock%}

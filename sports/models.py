@@ -1,6 +1,10 @@
 from django.db import models
 
 
+def sportPath (instance, filename):
+    return 'obrazky/' + str(instance.nazev_sportu)+'/img/'+filename
+
+
 class Udalost(models.Model):
     nazev_akce = models.CharField(verbose_name="Název akce", max_length=45)
 
@@ -32,6 +36,8 @@ class Sporty(models.Model):
     historie = models.TextField(verbose_name="Historie sportu")
 
     udalosti = models.ManyToManyField(Udalost, verbose_name="Událost")
+
+    obrazek = models.ImageField(upload_to=sportPath, null=True, blank=True, verbose_name='Obrázky')
 
     class Meta:
         ordering = ['nazev_sportu']

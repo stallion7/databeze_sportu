@@ -1,0 +1,5 @@
+.footer{
+    background-color: rgb(20, 20, 20) !important;
+    color: white;
+    transform: translateY(-3px);
+}
